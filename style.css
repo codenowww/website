@@ -1,0 +1,181 @@
+/*
+  style.css
+  Styles for the webpage
+*/
+
+/* Reset default browser padding and margin */
+body {
+  margin: 0; /* "Put no space between the body and the window edge */
+  padding: 0; /* "Put no space between the body and its child elements */
+  font-family: "Montserrat", "Open Sans", sans-serif; /* Sets the font style for the body */
+}
+
+section {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 10%; /* Space between the element's left edge and the content */
+  padding-right: 10%; /* Space between the element's right edge and the content */
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+section .sub-title {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+/*
+ * Utility
+**/
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  /* Set the method for how child elements align in the container */
+  display: flex; /* Arrange child elements based on align and justify rules */
+  justify-content: center; /* Left / right positioning */
+  align-items: center; /* Top / bottom positioning */
+}
+
+.flex-column {
+  display: flex; /* Arrange child elements based on align and justify rules */
+  flex-direction: column; /* The direction that child elements flex toward */
+}
+
+.space-evenly {
+  justify-content: space-evenly; /* Left / right positioning */
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.frost {
+  background: rgba(255, 255, 255, .6);
+}
+
+.tile {
+  background-image: url('http://bgrepeat.com/load-new.php?p=128-168');
+  background-repeat: repeat;
+}
+
+.with-bold span {
+  font-weight: bold;
+}
+
+
+/*
+ * Content
+**/
+
+
+/*
+ * Intro
+**/
+
+.intro {
+  /* Set the height and width of the section */
+  height: 100vh;
+  padding: 0;
+  background-image: url('https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  color: white;
+}
+
+.intro .standout {
+  padding: 80px;
+}
+
+.intro .standout h1 {
+  font-size: 80px;
+  margin: 0 0 10px 0;
+}
+
+.intro .standout p {
+  font-size: 40px;
+  margin: 0;
+}
+
+
+/*
+ * Profile
+**/
+
+.profile .about-me-and-details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile .about-me-and-details div {
+  flex-basis: 100%;
+  padding: 40px;
+}
+
+.profile-photo {
+  max-height: 300px;
+  max-width: 300px;
+  height: 20vw;
+  width: 20vw;
+  border: 10px solid silver;
+}
+
+
+/*
+ * Experience
+**/
+
+.experience ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.experience ul li {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+
+/*
+ * Technologies
+**/
+
+.technologies {
+  display: flex;
+}
+
+.technologies ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0 40px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.technologies ul li {
+  padding: 20px 10px;
+}
+
+
+/*
+ * Contact
+**/
+
+.contact .social {
+  list-style-type: none;
+  text-align: center;
+}
+
+.contact .social {
+  padding: 0;
+}
+
+.contact .social li {
+  padding: 10px;
+}
